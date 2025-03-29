@@ -5,7 +5,7 @@ export enum WebSocketMessageType {
     DISCONNECT = "disconnect",
     MESSAGE = "message",
     ASSET_PRICE = "asset_price",
-    ORDER_BOOK_UPDATE = "orderBookUpdate",
+    ORDER_BOOK_UPDATE = "order_book_update",
 }
 
 type WebSocketMessage = {

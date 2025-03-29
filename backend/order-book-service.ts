@@ -76,7 +76,7 @@ wss.on('connection', (ws: ws.WebSocket) => {
         const updateType = 'orderBook';
         if (updateType === 'orderBook') {
             ws.send(JSON.stringify({
-                type: 'orderBookUpdate',
+                type: 'order_book_update',
                 data: generateOrderBookData(),
             }));
             // ws.send(
