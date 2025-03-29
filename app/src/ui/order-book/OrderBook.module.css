@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid var(--foreground);
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: var(--font-geist-mono);
+}
+
+.connectionStatus {
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.connecting {
+  color: #f59e0b;
+}
+
+.open {
+  color: #10b981;
+}
+
+.closed {
+  color: #6b7280;
+}
+
+.error {
+  color: #ef4444;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--foreground);
+}
+
+.tabButton {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-geist-sans);
+  font-size: 14px;
+  color: var(--foreground);
+}
+
+.tabButton.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.tabContent {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Order Book Styles */
+.orderBookContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderBookHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.asks, .bids {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderBookRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.askPrice {
+  color: #ef4444;
+}
+
+.bidPrice {
+  color: #10b981;
+}
+
+.spreadRow {
+  padding: 8px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 12px;
+}
+
+/* Trades Styles */
+.tradesContent {
+  width: 100%;
+}
+
+.tradesTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.tradesTable th {
+  padding: 8px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tradesTable td {
+  padding: 4px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.buyTrade td:first-child {
+  color: #10b981;
+}
+
+.sellTrade td:first-child {
+  color: #ef4444;
+} 
+
+.orderBookRowItem {
+  padding-right: 10px;
+}
