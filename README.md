@@ -6,13 +6,6 @@
 pnpm install
 ```
 
-## run backend (JS)
-
-```bash
-cd backend
-pnpm start
-```
-
 ## run backend (RUST)
 
 ```bash
@@ -25,6 +18,13 @@ cargo run
 ```bash
 cd frontend
 pnpm build && pnpm start
+```
+
+## run backend (JS)
+
+```bash
+cd backend
+pnpm start
 ```
     
 
