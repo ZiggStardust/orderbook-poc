@@ -24,7 +24,7 @@ export const useWebsocketConnection = () => {
 
             const orderBookObservable = webSocketClientRef.current.pipe(
                 filter((message: WebSocketMessage) => message.type === WebSocketMessageType.ORDER_BOOK_UPDATE),
-                throttleTime(150)
+                throttleTime(300)
             );
 
             const counterSubscription = messageCounter.subscribe({
