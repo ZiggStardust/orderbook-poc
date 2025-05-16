@@ -1,4 +1,4 @@
-# orderbook-poc-task
+# orderbook-poc
 
 ## install dependencies
 
